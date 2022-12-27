@@ -21,6 +21,7 @@ class PostController extends Controller
             'required' => 'Wajib Diisi',
             // 'max' => 'max 100%',
             // 'min' => 'min 1%',
+            'equal' => 'pembagian bonus masih salah',
         ];
         //define validation rules
         $validator = Validator::make($request->all(), [

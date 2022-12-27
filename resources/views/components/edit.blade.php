@@ -14,7 +14,7 @@
 
               <div class="form-outline mb-4">
                 <label class="form-label" for="totalBonus-edit">Pembayaran Bonus</label>
-                <input type="text" id="totalBonus-edit"  class="form-control" placeholder="Masukkan Jumlah Pembayaran"/> 
+                <input type="number" id="totalBonus-edit"  class="form-control" placeholder="Masukkan Jumlah Pembayaran"/> 
                 <div class="alert alert-danger mt-2 d-none" role="alert" id="alert-totalBonus-edit"></div>
               </div>
               <div class="row">

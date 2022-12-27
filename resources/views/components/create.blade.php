@@ -9,10 +9,12 @@
                 </button>
             </div>
             <div class="modal-body">
-
+              <div class="alert alert-danger print-error-msg" style="display:none">
+                <ul></ul>
+              </div>
                 <div class="form-outline mb-4">
                     <label class="form-label" for="totalBonus">Pembayaran Bonus</label>
-                    <input type="text" id="totalBonus" name="totalBonus" class="form-control" placeholder="Masukkan Jumlah Pembayaran"/> 
+                    <input type="number" id="totalBonus" name="totalBonus" class="form-control" placeholder="Masukkan Jumlah Pembayaran"/> 
                     <div class="alert alert-danger mt-2 d-none" role="alert" id="alert-totalBonus"></div>
                   </div>
                   <div class="row">
@@ -109,6 +111,16 @@ $(document).ready(function() {
       });
     });
 
+    // $('#totalBonus,#percentage,#percentage2,#percentage3').on('input', function() {
+    //   var totalBonus = $('#totalBonus').val();
+    //   var percentage = 100 / 3; // 3 orang
+    //   var percentage2 = 100 / 3;
+    //   var percentage3 = 100 / 3;
+    //     $('#percentage').val(percentage);
+    //     $('#percentage2').val(percentage2);
+    //     $('#percentage3').val(percentage3);
+    // });
+
     //button create post event
     $('body').on('click', '#btn-create', function () {
 
@@ -180,6 +192,11 @@ $(document).ready(function() {
                 //clear form
                 $('#totalBonus').val('');
                 $('#percentage').val('');
+                $('#percentage2').val('');
+                $('#percentage3').val('');
+                $('#payment').val('');
+                $('#payment2').val('');
+                $('#payment3').val('');
 
                 //close modal
                 $('#create').modal('hide');
