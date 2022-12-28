@@ -14,7 +14,7 @@
               </div>
                 <div class="form-outline mb-4">
                     <label class="form-label" for="totalBonus">Pembayaran Bonus</label>
-                    <input type="number" id="totalBonus" name="totalBonus" class="form-control" placeholder="Masukkan Jumlah Pembayaran"/> 
+                    <input type="text" id="totalBonus" name="totalBonus" class="form-control" placeholder="Masukkan Jumlah Pembayaran"/> 
                     <div class="alert alert-danger mt-2 d-none" role="alert" id="alert-totalBonus"></div>
                   </div>
                   <div class="row">
@@ -22,7 +22,7 @@
                       <!-- Name input -->
                       <label for="basic-url" class="form-label">Buruh A</label>
                         <div class="input-group mb-3">
-                            <input type="number" class="form-control" id="percentage" name="percentage" class="form-control" placeholder="Masukkan jumlah Presentase" maxlength="100" min="1" max="100">
+                            <input type="text" class="form-control" id="percentage" name="percentage" class="form-control" placeholder="Masukkan jumlah Presentase" maxlength="100" min="1" max="100">
                             <span class="input-group-text">%</span>
                           </div>
                         <div class="alert alert-danger mt-2 d-none" role="alert" id="alert-percentage"></div>
@@ -31,7 +31,7 @@
                         <!-- Name input -->
                         <label for="basic-url" class="form-label">Buruh B</label>
                           <div class="input-group mb-3">
-                              <input type="number" class="form-control" id="percentage2" name="percentage2" class="form-control" placeholder="Masukkan jumlah Presentase" maxlength="100" min="1" max="100">
+                              <input type="text" class="form-control" id="percentage2" name="percentage2" class="form-control" placeholder="Masukkan jumlah Presentase" maxlength="100" min="1" max="100">
                               <span class="input-group-text">%</span>
                             </div>
                           <div class="alert alert-danger mt-2 d-none" role="alert" id="alert-percentage2"></div>
@@ -40,7 +40,7 @@
                         <!-- Name input -->
                         <label for="basic-url" class="form-label">Buruh C</label>
                           <div class="input-group mb-3">
-                              <input type="number" class="form-control" id="percentage3" name="percentage3" class="form-control" placeholder="Masukkan jumlah Presentase" maxlength="100" min="1" max="100">
+                              <input type="text" class="form-control" id="percentage3" name="percentage3" class="form-control" placeholder="Masukkan jumlah Presentase" maxlength="100" min="1" max="100">
                               <span class="input-group-text">%</span>
                             </div>
                           <div class="alert alert-danger mt-2 d-none" role="alert" id="alert-percentage3"></div>
@@ -90,6 +90,9 @@
 </div>
 
 <script>
+  
+// fungsi rupiah
+
 
 
 $(document).ready(function() {
@@ -107,20 +110,9 @@ $(document).ready(function() {
         $('#percentage').val(percentage);
         $('#percentage2').val(percentage2);
         $('#percentage3').val(percentage3);
-        
+
       });
     });
-
-    // $('#totalBonus,#percentage,#percentage2,#percentage3').on('input', function() {
-    //   var totalBonus = $('#totalBonus').val();
-    //   var percentage = 100 / 3; // 3 orang
-    //   var percentage2 = 100 / 3;
-    //   var percentage3 = 100 / 3;
-    //     $('#percentage').val(percentage);
-    //     $('#percentage2').val(percentage2);
-    //     $('#percentage3').val(percentage3);
-    // });
-
     //button create post event
     $('body').on('click', '#btn-create', function () {
 
